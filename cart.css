@@ -1,0 +1,297 @@
+/*cart.css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+body{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-weight: 400; /* You can set this to 400, 500, 600, or 700 */
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.shopicons{
+    position: fixed;
+    top: 80px;
+    background: linear-gradient(135deg, #004e92, #00c9ff);
+    bottom: 80px;
+    left: 0;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+.carticon{
+    position: relative;
+}
+.cartQuantity{
+    position: absolute;
+    background-color: #00c9ff;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffff;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.shopicons span{
+    height: 70px;
+    width: 70px;
+    transform: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.shopicons span:hover{
+    background-color: #00c9ff;
+}
+.shopicons .material-symbols-outlined {
+    font-size: 48px; /* Adjusts the size of the icons */
+    color: #ffffff; /* Sets the icon color to white */
+    width: 60px; /* Adjust width */
+    height: 60px; /* Adjust height */
+}
+
+.header{
+height: 70px;
+position: fixed;
+right: 0;
+left: 140px;
+background: linear-gradient(135deg, #004e92, #00c9ff);
+top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 2.8rem;
+border-radius: 15px;
+color: white;
+font-weight: bold;
+}
+.displaydiv{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 50px;
+    column-gap: 30px;
+    margin-top: 86px;
+    margin-left: 140px;
+}
+.productdiv{
+    height: 430px;
+    width: 250px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #004e92, #00c9ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    transform: .3s;
+    cursor: pointer;
+    box-shadow: 4px 6px 8px 0 rgba(0.5,202, 236, 236);
+    
+}
+.productdiv:hover{
+    height: 430px;
+    width: 270px;
+}
+.productImg{
+    height: 230px;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+}
+.productdiv img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+.productName{
+    white-space: normal; /* Allows the text to wrap to the next line */
+    word-wrap: break-word; /* Breaks long words if necessary */
+    word-break: break-word; /* Ensures long words break correctly */
+    overflow-wrap: break-word;
+    min-height: 25px;
+    width: 210px;
+    color: #fff;
+ font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ratings{
+    margin-right: 60px;
+    height: 25px;
+    width: 150px;
+    
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+.ratings img{
+    width: 100%;
+}
+.productAmount{
+    height: 25px;
+    width: 210px;
+    display: flex;
+
+
+}
+.amount{
+height: 25px;
+width: 50%;
+border-radius: 10px;
+display: flex;
+text-align: center;
+justify-content: center;
+font-size: 1.3rem;
+color: #fff;
+}
+.quantity{
+    height: 25px;
+    width: 50%;
+    display: flex;
+
+}
+.add-to-cart-button{
+    height: 25px;
+    width: 210px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: aqua;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: .5s;
+}
+.add-to-cart-button:hover{
+    background-color: #829499;
+}
+select{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+.cartDiv{
+    background: linear-gradient(135deg, #004e92, #00c9ff);
+    position: fixed;
+    top: 90px;
+    right: -350px;
+    width: 350px;
+    min-height: 180px;
+    border-radius: 15px;
+    box-shadow: 4px 6px 8px 0 rgba(0.5,202, 236, 236);
+    transition: right .8s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hideCart{
+    
+    right: 0;
+}
+
+.closecartDiv{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+width: 40%;
+}
+.closeCartBtn{
+    background: linear-gradient(135deg, #004e92, #00c9ff);height: 40px;
+    height: 35px;
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    transform: .5s;
+    cursor: pointer;
+}
+.closeCartBtn:hover{
+ background-color: aqua;
+}
+.cartItems{
+    background: linear-gradient(135deg, #004e92, #00c9ff);
+flex: .9;
+width: 97%;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(0, 1fr);
+row-gap: 20px;
+margin-bottom: 10px;
+
+}
+.onecartproduct{
+  
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartproductImg{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    
+}
+.cartproductImg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+   
+}
+.cartproductdetails{
+   
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    background: linear-gradient(135deg, #004e92, #00c9ff);
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    justify-content: space-around;
+    padding-left: 10px;
+    
+}
+.cartproductdetails button{
+    width: 50%;
+}
+.cartproductdetails .productAmount{  
+ display: flex;
+ align-items: left;
+ text-align: left;
+ justify-content: left;
+}
+.cartproductdetails .productAmount .amount{
+    display: flex;
+ align-items: left;
+ text-align: left;
+ justify-content: left;
+}
+.cartproductdetails .productAmount .quantity select{
+   margin-left: -40px;
+}
+
